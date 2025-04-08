@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration and Contact Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Webpage</h1>
+  </header>
+
+  <!-- Ordered list with Roman numerals -->
+  <section>
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+  </section>
+
+  <!-- External Image -->
+  <section>
+    <h2>Our Image</h2>
+    <img src="https://images.pexels.com/photos/123123/pexels-photo-123123.jpeg" alt="A beautiful landscape" width="600">
+  </section>
+
+  <!-- Table of Contacts -->
+  <section>
+    <h2>Contact List</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>1234 Mombasa Street</td>
+          <td>0712-345678</td>
+          <td>johndoe@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>5678 moi Avenue</td>
+          <td>0712-345678</td>
+          <td>janesmith@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mike Johnson</td>
+          <td>91011 mombasa Road</td>
+          <td>555-9101</td>
+          <td>mikejohnson@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Emily Davis</td>
+          <td>1213 South B</td>
+          <td>0712-345678</td>
+          <td>emilydavis@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Chris Lee</td>
+          <td>1415 Nairobi West</td>
+          <td>0712-345678</td>
+          <td>chrislee@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="gender">Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="in">India</option>
+        <option value="ke">Kenya</option>
+      </select><br><br>
+
+      <label for="subscribe">Subscribe to our newsletter:</label>
+      <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact us at: <a href="mailto:support@example.com">support@example.com</a></p>
+  </footer>
+
+</body>
+</html>
