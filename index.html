@@ -1,120 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration and Contact Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features Demo</title>
 </head>
 <body>
+    <!-- Header section -->
+    <header>
+        <h1>HTML5 Features Demonstration</h1>
+    </header>
 
-  <header>
-    <h1>Welcome to Our Webpage</h1>
-  </header>
+    <!-- Ordered list with Roman numerals -->
+    <section>
+        <h2>Our Services</h2>
+        <ol type="I">
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>UI/UX Design</li>
+            <li>Digital Marketing</li>
+            <li>IT Consulting</li>
+        </ol>
+    </section>
 
-  <!-- Ordered list with Roman numerals -->
-  <section>
-    <h2>Ordered List with Roman Numerals</h2>
-    <ol type="I">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ol>
-  </section>
+    <!-- External image from Pexels -->
+    <section>
+        <h2>Our Office</h2>
+        <figure>
+            <img src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg" 
+                 alt="Modern office space" 
+                 width="600" 
+                 height="400">
+            <figcaption>Our headquarters in Nairobi</figcaption>
+        </figure>
+    </section>
 
-  <!-- External Image -->
-  <section>
-    <h2>Our Image</h2>
-    <img src="https://images.pexels.com/photos/123123/pexels-photo-123123.jpeg" alt="A beautiful landscape" width="600">
-  </section>
+    <!-- Table of 5 contacts -->
+    <section>
+        <h2>Contact Directory</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wangari Maathai</td>
+                    <td>45 Kenyatta Avenue, Nairobi</td>
+                    <td>+254 722 123 456</td>
+                    <td>wmaathai@example.com</td>
+                </tr>
+                <tr>
+                    <td>David Kimani</td>
+                    <td>78 Moi Avenue, Nairobi</td>
+                    <td>+254 733 234 567</td>
+                    <td>dkimani@example.com</td>
+                </tr>
+                <tr>
+                    <td>Njeri Kamau</td>
+                    <td>112 Ngong Road, Nairobi</td>
+                    <td>+254 722 345 678</td>
+                    <td>nkamau@example.com</td>
+                </tr>
+                <tr>
+                    <td>Francis Mwangi</td>
+                    <td>34 Tom Mboya Street, Nairobi</td>
+                    <td>+254 733 456 789</td>
+                    <td>fmwangi@example.com</td>
+                </tr>
+                <tr>
+                    <td>Grace Odhiambo</td>
+                    <td>67 Mombasa Road, Nairobi</td>
+                    <td>+254 722 567 890</td>
+                    <td>godhiambo@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-  <!-- Table of Contacts -->
-  <section>
-    <h2>Contact List</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Address</th>
-          <th>Mobile</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>John Doe</td>
-          <td>1234 Mombasa Street</td>
-          <td>0712-345678</td>
-          <td>johndoe@gmail.com</td>
-        </tr>
-        <tr>
-          <td>Jane Smith</td>
-          <td>5678 moi Avenue</td>
-          <td>0712-345678</td>
-          <td>janesmith@gmail.com</td>
-        </tr>
-        <tr>
-          <td>Mike Johnson</td>
-          <td>91011 mombasa Road</td>
-          <td>555-9101</td>
-          <td>mikejohnson@gmail.com</td>
-        </tr>
-        <tr>
-          <td>Emily Davis</td>
-          <td>1213 South B</td>
-          <td>0712-345678</td>
-          <td>emilydavis@gmail.com</td>
-        </tr>
-        <tr>
-          <td>Chris Lee</td>
-          <td>1415 Nairobi West</td>
-          <td>0712-345678</td>
-          <td>chrislee@gmail.com</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <!-- Registration form with validation -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <!-- Name field -->
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <!-- Email field -->
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            </div>
+            
+            <!-- Password field -->
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8" 
+                       placeholder="Minimum 8 characters" required>
+            </div>
+            
+            <!-- Date field -->
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            
+            <!-- Dropdown menu -->
+            <div>
+                <label for="location">Location:</label>
+                <select id="location" name="location" required>
+                    <option value="">--Select your county--</option>
+                    <option value="nairobi">Nairobi</option>
+                    <option value="mombasa">Mombasa</option>
+                    <option value="kisumu">Kisumu</option>
+                    <option value="nakuru">Nakuru</option>
+                    <option value="eldoret">Eldoret</option>
+                </select>
+            </div>
+            
+            <!-- Radio buttons -->
+            <div>
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            
+            <!-- Checkboxes -->
+            <div>
+                <p>Interests (check all that apply):</p>
+                <input type="checkbox" id="tech" name="interests" value="technology">
+                <label for="tech">Technology</label>
+                
+                <input type="checkbox" id="business" name="interests" value="business">
+                <label for="business">Business</label>
+                
+                <input type="checkbox" id="arts" name="interests" value="arts">
+                <label for="arts">Arts & Culture</label>
+                
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+            </div>
+            
+            <!-- Submit button -->
+            <div>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear Form">
+            </div>
+        </form>
+    </section>
 
-  <!-- Registration Form -->
-  <section>
-    <h2>Registration Form</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    <!-- Multimedia elements -->
+    <section>
+        <h2>Multimedia Content</h2>
+        
+        <!-- Audio element -->
+        <div>
+            <h3>Audio Sample</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        
+        <!-- Video element -->
+        <div>
+            <h3>Video Sample</h3>
+            <video width="400" height="300" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
-
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required><br><br>
-
-      <label for="gender">Gender:</label><br>
-      <input type="radio" id="male" name="gender" value="male" required>
-      <label for="male">Male</label><br>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label><br><br>
-
-      <label for="country">Country:</label>
-      <select id="country" name="country" required>
-        <option value="us">United States</option>
-        <option value="ca">Canada</option>
-        <option value="uk">United Kingdom</option>
-        <option value="in">India</option>
-        <option value="ke">Kenya</option>
-      </select><br><br>
-
-      <label for="subscribe">Subscribe to our newsletter:</label>
-      <input type="checkbox" id="subscribe" name="subscribe"><br><br>
-
-      <button type="submit">Register</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>Contact us at: <a href="mailto:support@example.com">support@example.com</a></p>
-  </footer>
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HTML5 Demo </p>
+    </footer>
 </body>
 </html>
